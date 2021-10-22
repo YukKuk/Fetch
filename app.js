@@ -11,7 +11,7 @@ sendRequest(url)
     arr.map(item => {
       const newDiv = document.createElement('div');
       newDiv.style.width = '200px'
-      newDiv.innerHTML = `<img href="${item.image}" width="200px" height="200px">${item.name}`;
+      newDiv.innerHTML = `<img src="${item.image}" width="200px" height="200px">${item.name}`;
       document.body.insertBefore(newDiv, document.body.lastChild);
     })
   })
